@@ -1,16 +1,21 @@
 ul {
     display:flex;
     margin:3rem
-
+    
 }
 a {
     text-decoration:none;
-    padding: 1rem;
-
+    
+    font-size: 24px;
+    margin-right: 57px;
     li {
-        color: #FF6060;
+        
         transition:0.3s;
         cursor: pointer;
         list-style-type: none
     }
+}
+.navigation {
+    display: flex;
+    justify-content: flex-end;
 }
