@@ -8,14 +8,40 @@
     margin: 0 auto;
     width: 1240px;
     vertical-align: middle;
- 
+    background-size: cover;
 }
 
-h1 {
+.home-title {
     text-align: center;
     font-weight:500 ;
     font-size: 48px;
     color: #FFFFFF;
     padding-top: 5rem;
     filter: none;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1240px;
+    justify-content: space-between;
+    padding-top:2rem;
+    
+}
+.card {
+    height: 340px;
+    width: 340px;
+    background-color: red;
+    
+    border-radius: 25px;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size:18px ;
+    font-weight: 500;
+    color:white;
+    text-align: left;
+    margin-left:2rem;
+   
 }
