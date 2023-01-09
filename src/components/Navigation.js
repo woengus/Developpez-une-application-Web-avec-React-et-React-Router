@@ -1,9 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/LOGO.svg";
 
 const Navigation = () => {
   return (
     <div className="navigation">
+      <NavLink to="/">
+        <img src={logo} alt="Logo de l'application" className="logo" />
+      </NavLink>
       <ul>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
           <li>Accueil</li>

@@ -12,8 +12,14 @@ const Home = () => {
       </div>
       <div className="cards">
         {logements.map((logement) => (
-          <div id={logement.id} className="card">
-            <h2>{logement.title}</h2>
+          <div
+            id={logement.id}
+            className="card"
+            style={{ backgroundImage: `url(${logement.cover})` }}
+          >
+            <span className="card-title-span">
+              <h2 className="card-title">{logement.title}</h2>
+            </span>
           </div>
         ))}
       </div>

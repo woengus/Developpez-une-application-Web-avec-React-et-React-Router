@@ -11,7 +11,9 @@ const Erreur = () => {
       </div>
       <p>Oups! La page que vous demandez n'éxiste pas.</p>
       <div className="navlink">
-        <NavLink to="/">Retourner sur la page d'accueil.</NavLink>
+        <a href="/" className="nav-active">
+          Retourner sur la page d'accueil.
+        </a>
       </div>
     </div>
   );
