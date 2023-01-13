@@ -36,7 +36,19 @@
     margin-bottom: 2rem;
     margin-left: 2rem; 
     margin-right: 2rem;
+    position: relative;
+    background-size:cover;
+    &:before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #0000003d; //transparence
+        z-index: 10;
+        position: absolute;
+        border-radius: 25px;
+    }
 }
+
 
 .card-title {
     font-size:18px ;
@@ -46,5 +58,7 @@
     margin-left:2rem;
     padding-top:17rem;
     width: 240px;
-    text-shadow: 2px 1px 2px black;
+    //text-shadow: 2px 1px 2px black;
+    z-index: 12;
+    position: relative;
 }

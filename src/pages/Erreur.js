@@ -1,11 +1,8 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import { NavLink } from "react-router-dom";
 
 const Erreur = () => {
   return (
     <div>
-      <Navigation />
       <div className="centered">
         <h1>404</h1>
       </div>

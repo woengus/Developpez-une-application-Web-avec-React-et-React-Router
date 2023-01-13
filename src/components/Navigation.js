@@ -4,7 +4,7 @@ import logo from "../assets/LOGO.svg";
 
 const Navigation = () => {
   return (
-    <div className="navigation">
+    <nav className="navigation">
       <NavLink to="/">
         <img src={logo} alt="Logo de l'application" className="logo" />
       </NavLink>
@@ -19,7 +19,7 @@ const Navigation = () => {
           <li>A Propos</li>
         </NavLink>
       </ul>
-    </div>
+    </nav>
   );
 };
 
