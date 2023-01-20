@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Erreur from "./pages/Erreur";
 import Home from "./pages/Home";
 import FooterApp from "./components/Footer";
+import Logement from "./pages/Logement";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/logement" element={<Logement />} />
         <Route path="/about" element={<About />} />
         {/*page 404*/}
         <Route path="*" element={<Erreur />} />
