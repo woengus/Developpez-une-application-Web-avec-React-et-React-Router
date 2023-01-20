@@ -3,32 +3,29 @@ li {
 }
 .dropdown-menu {
     background-color: #F6F6F6;
-    width: 1024px;
-    bottom:5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    order:1;
+   
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-.dropdown-menu.active {
+.dropdown-text{
+    overflow: hidden;
+    padding: 0 20px;
+}
+.dropdown-text.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
+
 }
-.dropdown-menu.inactive {
+.dropdown-text.inactive {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-20px);
-    transition: var(--speed) ease;
 }
 .dropdown-title {
     background-color: #FF6060;
     border-radius: 5px;
-    width: 1024px;
+    width: 100%;
     display:flex;
     justify-content: space-between;
-    order:0;
        h2 {
         color:white;
         margin-left:1rem;
