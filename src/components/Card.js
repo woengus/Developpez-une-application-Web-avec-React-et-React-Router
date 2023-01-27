@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ logement }) => {
   return (
@@ -7,9 +8,11 @@ const Card = ({ logement }) => {
       className="card"
       style={{ backgroundImage: `url(${logement.cover})` }}
     >
-      <span className="card-title-span">
-        <h2 className="card-title">{logement.title}</h2>
-      </span>
+      <NavLink to={`logement/${logement.id}`}>
+        <span className={`card-title-span ${logement.id}`}>
+          <h2 className="card-title">{logement.title}</h2>
+        </span>
+      </NavLink>
     </div>
   );
 };
