@@ -1,0 +1,115 @@
+.background-img img{
+    height: 415px;
+    margin: 0 auto;
+    border-radius: 25px;
+    object-fit: cover;
+    width: 1240px;
+}
+.background-logement {
+    width: 1240px;
+    margin: 0 auto;
+    height: 73vh;
+}
+.background-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left-arrow {
+    position: relative;
+    top:250px;
+    left:1170px;
+}
+.right-arrow {
+    position: relative;
+    top:-250px;
+    left:20px;
+}
+.tags {
+    background-color:#FF6060 ;
+    color:white;
+    border-radius: 5px;
+    font-weight: 500;
+    size: 14px;
+    align-items: center;
+    padding-left:1rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    width: 115px;
+    height: 25px;
+    margin-right: 1rem;;
+}
+.host-picture img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    position: relative;
+    top:-40px;
+}
+.title-logement {
+    font-size: 500;
+    font-size: 36px;
+}
+.town-logement {
+    font-weight: 500;
+    font-size: 18px;
+}
+.host-name {
+    font-weight: 500;
+    font-size: 18px;
+    width : min-content;
+    position: relative;
+    top:-30px;
+    left:435px;
+}
+.flex-logement {
+    justify-content: space-between;
+}
+.flex-information-logement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.description-full {
+    display: flex;
+    flex-direction: column;
+   
+}
+.equipements-full {
+    display: flex;
+    flex-direction: column;
+   
+}
+.flex-logement {
+    display: flex;
+   
+}
+.description {
+    background-color: #FF6060;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+.description-logement {
+    width: 582px;
+    margin-bottom:1rem ;
+}
+.equipement {
+    background-color: #FF6060;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+.equipement-logement {
+    width: 582px;
+}
+
+.logement {
+    background-color: white;
+}
