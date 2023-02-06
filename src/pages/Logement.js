@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-
+import Dropdown from "../components/Dropdown";
 import Stars from "../components/Stars";
 import logements from "../logements.json";
 
@@ -118,13 +118,13 @@ const Logement = () => {
         </div>
 
         <div className="flex-logement">
-          <div className="description-full>">
-            <div className="description">Description</div>
-            <div className="description-logement">{logement.description}</div>
+          <div className="description-full">
+            <Dropdown title={"Description"} text={logement.description} />
           </div>
           <div className="equipements-full">
-            <div className="equipement">Equipements</div>
-            <div className="equipement-logement">{equipements}</div>
+            <div className="equipements-full">
+              <Dropdown title="Equipements" text={equipements} />
+            </div>
           </div>
         </div>
       </div>
