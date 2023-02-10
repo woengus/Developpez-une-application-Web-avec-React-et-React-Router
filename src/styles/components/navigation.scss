@@ -49,3 +49,24 @@ a {
         }
     }
 }
+@media screen and (max-width: 450px) {
+    .navigation {
+        display: flex;
+        justify-content: flex-start; 
+    }
+    a {
+        font-size:12px;
+        margin-right:8px;
+        
+    }
+   
+    a img {
+        width: 70%;
+    }
+    ul {
+       
+        margin:1rem;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

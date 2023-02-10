@@ -62,3 +62,39 @@
     z-index: 12;
     position: relative;
 }
+@media screen and (max-width: 450px) {
+.background {
+    width: 335px;
+    height: 111px;
+    border-radius:10px;
+}
+.home-title {
+    font-size: 24px;
+    padding-top:2rem;
+}
+.card{
+    width: 335px;
+    height: 255px;
+    margin: 0 auto;
+    width: 335px;
+    margin-bottom:2rem ;
+    border-radius:10px;
+    &:before {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 335px;
+    margin-bottom:2rem ;
+}
+ 
+}
+.cards {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 335px;
+    
+}
+.card-title {
+    padding-top:12rem;
+    margin-left:1rem;
+}
+}

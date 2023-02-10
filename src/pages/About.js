@@ -1,6 +1,6 @@
 import React from "react";
 import Dropdown from "../components/Dropdown";
-import Background from "../assets/gustavo-alves-YOXSC4zRcxw-unsplash 1.svg";
+import Background from "../assets/Background_about.png";
 const About = () => {
   return (
     <div className="contenu">

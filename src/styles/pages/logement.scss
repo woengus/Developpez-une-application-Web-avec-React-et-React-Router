@@ -64,11 +64,13 @@
 }
 .flex-logement {
     justify-content: space-between;
+  
 }
 .flex-information-logement {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+ 
 }
 .description-full {
     display: flex;
@@ -117,10 +119,62 @@
 .equipement-logement {
     width: 582px;
 }
-
 .logement {
     background-color: white;
 }
 .footer {
-    margin-top: 16rem;
+    margin-top: 23rem;
+}
+@media screen and (max-width: 450px) {
+  .background-logement {
+    max-width: 335px;
+  }
+  .background-img img {
+    width: 335px;
+    height: 255px;
+  }
+  .right-arrow {
+    top:-165px;
+    left:15px;
+  }
+  .left-arrow {
+    top:180px;
+    left:270px;
+  }
+  .title-logement {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .town-logement {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .host-picture{
+    position: relative;
+    top:95px;
+    left:1px;
+  }
+  .host-name {
+    font-weight: 500;
+    font-size:12px;
+    position:relative;
+    top:85px;
+    left:15px;
+  }
+  .flex-logement {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .red-star {
+    svg {
+        width: 15px;
+    }
+  }
+  .gray-star {
+    svg {
+        width: 15px;
+    }
+  }
+
 }

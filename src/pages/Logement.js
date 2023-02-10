@@ -18,9 +18,9 @@ const Logement = () => {
     //création du rating du logement
   }, []); //le [] sert à lancer le useEffect une fois, au lancement du composant
 
-  const equipements = logement.equipments;
+  const equipements = logement ? logement.equipments : [];
   //map des equipements
-  equipements.map((data) => {
+  const equipementHtml = equipements.map((data) => {
     return (
       <div key={data} className="equipement">
         {data}
@@ -28,14 +28,9 @@ const Logement = () => {
     );
   });
   //map des tags
-  const tags = logement.tags;
-  tags.map((data) => {
-    return (
-      <div className="tags" key={data}>
-        {data}
-      </div>
-    );
-  });
+  const tags = logement ? logement.tags : [];
+  console.log(tags);
+
   //handleClick
 
   const [curentIndex, setCurentIndex] = useState(0);
@@ -58,11 +53,9 @@ const Logement = () => {
     const totalLength = logement.pictures.length;
     if (curentIndex === 0) {
       setCurentIndex(totalLength - 1);
-
       return;
     }
     const newIndex = curentIndex - 1;
-
     setCurentIndex(newIndex);
   };
   return (
@@ -85,7 +78,7 @@ const Logement = () => {
                   />
                 </svg>
               </span>
-              <img src={logement.pictures[curentIndex]} alt="logement" />
+              <img src={logement?.pictures[curentIndex]} alt="logement" />
               <span className="right-arrow" onClick={handleRotationLeft}>
                 <svg
                   width="48"
@@ -103,27 +96,35 @@ const Logement = () => {
             </div>
           </div>
         </div>
-        <div className="title-logement">{logement.title}</div>
+        <div className="title-logement">{logement?.title}</div>
         <div className="flex-information-logement">
-          <div className="town-logement">{logement.location}</div>
-          <div className="host-name">{logement.host.name}</div>
+          <div className="town-logement">{logement?.location}</div>
+          <div className="host-name">{logement?.host.name}</div>
           <div className="host-picture">
-            <img src={logement.host.picture} alt={logement.host.name} />
+            <img src={logement?.host.picture} alt={logement?.host.name} />
           </div>
         </div>
 
         <div className="flex-logement-town-stars">
-          <div>{tags}</div>
-          <Stars rating={logement.rating} />
+          <div>
+            {tags.map((data) => {
+              return (
+                <div className="tags" key={data}>
+                  {data}
+                </div>
+              );
+            })}
+          </div>
+          <Stars rating={logement?.rating} />
         </div>
 
         <div className="flex-logement">
           <div className="description-full">
-            <Dropdown title={"Description"} text={logement.description} />
+            <Dropdown title={"Description"} text={logement?.description} />
           </div>
           <div className="equipements-full">
             <div className="equipements-full">
-              <Dropdown title="Equipements" text={equipements} />
+              <Dropdown title="Equipements" text={equipementHtml} />
             </div>
           </div>
         </div>

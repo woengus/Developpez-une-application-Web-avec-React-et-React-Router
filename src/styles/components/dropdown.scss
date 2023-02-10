@@ -37,3 +37,8 @@ li {
         cursor:pointer;
     }
 }
+@media screen and (max-width: 450px) {
+    .dropdown-menu {
+        width: 335px;
+    }
+}
