@@ -21,15 +21,10 @@ const Logement = () => {
   const equipements = logement ? logement.equipments : [];
   //map des equipements
   const equipementHtml = equipements.map((data) => {
-    return (
-      <div key={data} className="equipement">
-        {data}
-      </div>
-    );
+    return <li key={data}>{data}</li>;
   });
   //map des tags
   const tags = logement ? logement.tags : [];
-  console.log(tags);
 
   //handleClick
 
@@ -106,7 +101,7 @@ const Logement = () => {
         </div>
 
         <div className="flex-logement-town-stars">
-          <div>
+          <div className="flex-tags">
             {tags.map((data) => {
               return (
                 <div className="tags" key={data}>

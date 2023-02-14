@@ -3,9 +3,10 @@ li {
 }
 .dropdown-menu {
     background-color: #F6F6F6;
-   
     overflow: hidden;
     margin-bottom: 20px;
+    width: 100%;
+    min-width: 335px;
 }
 .dropdown-text{
     overflow: hidden;
@@ -36,9 +37,48 @@ li {
         margin-top:1rem;
         cursor:pointer;
     }
+    .icon {
+        width: 30px;
+        
+    }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 820px) {
     .dropdown-menu {
-        width: 335px;
+        width: 100%;
+        max-width: 800px;
+    }
+    .dropdown-title icon {
+        svg {
+            width: 20px;
+        }
+        
+     }
+     .dropdown-title img {
+         margin-top:0 ;
+     }
+     .dropdown-title {
+        .icon {
+            width: 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .dropdown-menu {
+        width: 100%;
+        max-width: 500px;
+    }
+    .dropdown-title icon {
+        svg {
+            width: 20px;
+        }
+        
+     }
+     .dropdown-title img {
+         margin-top:0 ;
+     }
+     .dropdown-title {
+        .icon {
+            width: 20px;
+        }
     }
 }

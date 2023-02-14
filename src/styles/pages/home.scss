@@ -1,11 +1,10 @@
 
 .background {
     background-image: url("../../assets/IMG_opacity.png");
-    width: 1240px;
     height: 233px;
     border-radius: 25px;
     margin: 0 auto;
-    width: 1240px;
+    max-width: 1240px;
     vertical-align: middle;
     background-size:cover;
 }
@@ -23,7 +22,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 1240px;
+    max-width: 1240px;
     justify-content: space-between;
     padding-top:2rem;
     
@@ -62,7 +61,7 @@
     z-index: 12;
     position: relative;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 820px) {
 .background {
     width: 335px;
     height: 111px;

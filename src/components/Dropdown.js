@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import icon from "../assets/icons8-chevron-haut-30.png";
+import icon from "../assets/up_arrow.svg";
+import icon2 from "../assets/down_arrow.svg";
 
 const Dropdown = (props) => {
   const [open, setOpen] = useState(false);
@@ -8,7 +9,7 @@ const Dropdown = (props) => {
       <div className="dropdown-title">
         <h2>{props.title}</h2>
         <img
-          src={icon}
+          src={icon2}
           alt="flêche ouverture"
           className="icon"
           onClick={() => setOpen(!open)}

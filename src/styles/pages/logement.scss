@@ -6,7 +6,7 @@
     width: 1240px;
 }
 .background-logement {
-    width: 1240px;
+    max-width: 1240px;
     margin: 0 auto;
     height: 73vh;
 }
@@ -28,16 +28,29 @@
 .tags {
     background-color:#FF6060 ;
     color:white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 500;
     size: 14px;
     align-items: center;
-    padding-left:1rem;
+    
     padding-top:0.5rem;
-    padding-bottom: 0.5rem;
-    width: 115px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 115px;
     height: 25px;
-    margin-right: 1rem;;
+    margin-right: 1rem;
+   
+    text-align: center;
+}
+.flex-tags {
+    display: flex;
+    flex-direction: row;
+}
+.flex-logement-town-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 .host-picture img {
     width: 64px;
@@ -87,7 +100,7 @@
    
 }
 .description-full{
-    width: 582px;
+   max-width: 582px;
    
 }
 .description {
@@ -104,7 +117,7 @@
     margin-bottom:1rem ;
 }
 .equipements-full {
-    width: 582px;
+    max-width: 582px;
   
 }
 .equipement {
@@ -125,7 +138,101 @@
 .footer {
     margin-top: 23rem;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1024px) {
+    .background-logement {
+      max-width: 540px;
+    }
+    .background-img img {
+      width: 540px;
+      height: 255px;
+    }
+    .right-arrow {
+      top:-165px;
+      left:15px;
+      svg {
+          width: 30px;
+      }
+    }
+    .left-arrow {
+      top:180px;
+      left:490px;
+      svg {
+          width: 30px;
+      }
+    }
+    .title-logement {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .town-logement {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .host-picture{
+      position: relative;
+      top:95px;
+      left:1px;
+    }
+    .host-name {
+      font-weight: 500;
+      font-size:12px;
+      position:relative;
+      top:110px;
+      left:15px;
+    }
+    .flex-logement {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .red-star {
+      svg {
+          width: 15px;
+      }
+    }
+    .gray-star {
+      svg {
+          width: 15px;
+      }
+    }
+    .flex-logement-town-stars {
+      flex-wrap: wrap;
+      width: 315px;
+      }
+      .flex-tags {
+          flex-wrap: wrap;
+      }
+      .host-picture img {
+         
+          position:initial;
+          
+      }
+      .tags {
+          border-radius: 5px;
+          font-weight: 500;
+          size: 14px;
+          min-width:84px;
+          height: 18px;
+          padding-top: 0.2rem;
+          margin-bottom: 1rem;
+          font-size: 10px;
+      }
+      .flex-logement {
+          padding-top: 1rem;
+      }
+     .background-logement {
+      height: 103vh;
+      }
+      .dropdown-title h2 {
+          font-size: 13px;
+      }
+       .dropdown-text p {
+          font-size: 12px;
+      }
+      
+       
+  }
+@media screen and (max-width: 500px) {
   .background-logement {
     max-width: 335px;
   }
@@ -136,10 +243,16 @@
   .right-arrow {
     top:-165px;
     left:15px;
+    svg {
+        width: 30px;
+    }
   }
   .left-arrow {
     top:180px;
-    left:270px;
+    left:290px;
+    svg {
+        width: 30px;
+    }
   }
   .title-logement {
     font-size: 18px;
@@ -158,7 +271,7 @@
     font-weight: 500;
     font-size:12px;
     position:relative;
-    top:85px;
+    top:110px;
     left:15px;
   }
   .flex-logement {
@@ -176,5 +289,40 @@
         width: 15px;
     }
   }
-
+  .flex-logement-town-stars {
+    flex-wrap: wrap;
+    width: 315px;
+    }
+    .flex-tags {
+        flex-wrap: wrap;
+    }
+    .host-picture img {
+       
+        position:initial;
+        
+    }
+    .tags {
+        border-radius: 5px;
+        font-weight: 500;
+        size: 14px;
+        min-width:84px;
+        height: 18px;
+        padding-top: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 10px;
+    }
+    .flex-logement {
+        padding-top: 1rem;
+    }
+   .background-logement {
+    height: 103vh;
+    }
+    .dropdown-title h2 {
+        font-size: 13px;
+    }
+     .dropdown-text p {
+        font-size: 12px;
+    }
+    
+     
 }
