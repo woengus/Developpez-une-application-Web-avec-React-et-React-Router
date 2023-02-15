@@ -66,16 +66,19 @@
 .title-logement {
     font-size: 500;
     font-size: 36px;
+    padding-bottom: 0.5rem;
 }
 .town-logement {
     font-weight: 500;
     font-size: 18px;
+    padding-bottom: 0.5rem;
 }
 .host-name {
     font-weight: 500;
     font-size: 18px;
     width : min-content;
     align-self: initial;
+    padding-top: 0.5rem;
 }
 .flex-logement {
     justify-content: space-between;
@@ -139,6 +142,8 @@
 .footer {
     margin-top: 23rem;
 }
+
+
 @media screen and (max-width: 1024px) {
     .background-logement {
       max-width: 540px;
@@ -264,6 +269,7 @@
   .flex-logement-town-stars {
     flex-wrap: wrap;
     width: 315px;
+    
     }
     .flex-tags {
         flex-wrap: wrap;
@@ -291,14 +297,24 @@
         font-size: 12px;
     }  
     .host-flex {
-      position: relative;
-      top:95px;
-      left:0px;
-    }
+    position: relative;
+    top: 90px;
+    left: 0;
+   }
     .description-full{
       width: 335px;
    }
    .equipements-full {
     width: 335px;
+   }
+   .host-name {
+    margin-top: 1rem;
+    font-size: 12px;
+   }
+   .title-logement {
+    padding-bottom: 0.5rem;
+   }
+   .town-logement {
+    padding-bottom: 0.5rem;
    }
 }
