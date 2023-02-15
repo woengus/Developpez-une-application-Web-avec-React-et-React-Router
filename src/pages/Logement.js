@@ -91,11 +91,17 @@ const Logement = () => {
             </div>
           </div>
         </div>
-        <div className="title-logement">{logement?.title}</div>
+
         <div className="flex-information-logement">
-          <div className="town-logement">{logement?.location}</div>
-          <div className="host-name">{logement?.host.name}</div>
-          <div className="host-picture">
+          <div className="flex-title-town">
+            <div className="title-logement">{logement?.title}</div>
+            <div className="town-logement">{logement?.location}</div>
+          </div>
+
+          <div className="host-flex">
+            <div className="host-name">{logement?.host.name}</div>
+            <div className="host-picture"></div>
+
             <img src={logement?.host.picture} alt={logement?.host.name} />
           </div>
         </div>

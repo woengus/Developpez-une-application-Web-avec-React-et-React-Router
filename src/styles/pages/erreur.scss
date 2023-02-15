@@ -46,3 +46,16 @@
         }
     }
 }
+@media screen and (max-width: 500px) {
+    .centered {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+       .erreur {
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+}

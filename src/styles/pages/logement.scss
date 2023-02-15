@@ -32,15 +32,17 @@
     font-weight: 500;
     size: 14px;
     align-items: center;
-    
     padding-top:0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     min-width: 115px;
     height: 25px;
     margin-right: 1rem;
-   
     text-align: center;
+}
+.host-flex {
+  display: flex;
+  flex-direction: row;
 }
 .flex-tags {
     display: flex;
@@ -52,13 +54,15 @@
     justify-content: space-between;
     padding-bottom: 1rem;
 }
-.host-picture img {
+.host-flex {
+  img {
     width: 64px;
     height: 64px;
     border-radius: 50px;
-    position: relative;
-    top:-40px;
+    margin-left: 1rem;
+  }
 }
+
 .title-logement {
     font-size: 500;
     font-size: 36px;
@@ -71,9 +75,7 @@
     font-weight: 500;
     font-size: 18px;
     width : min-content;
-    position: relative;
-    top:-30px;
-    left:435px;
+    align-self: initial;
 }
 .flex-logement {
     justify-content: space-between;
@@ -100,8 +102,7 @@
    
 }
 .description-full{
-   max-width: 582px;
-   
+   width: 530px;
 }
 .description {
     background-color: #FF6060;
@@ -117,7 +118,7 @@
     margin-bottom:1rem ;
 }
 .equipements-full {
-    max-width: 582px;
+    width: 530px;
   
 }
 .equipement {
@@ -168,22 +169,10 @@
       font-size: 14px;
       font-weight: 500;
     }
-    .host-picture{
-      position: relative;
-      top:95px;
-      left:1px;
-    }
-    .host-name {
-      font-weight: 500;
-      font-size:12px;
-      position:relative;
-      top:110px;
-      left:15px;
-    }
+  
     .flex-logement {
       display: flex;
       flex-direction: column;
-      
     }
     .red-star {
       svg {
@@ -202,11 +191,7 @@
       .flex-tags {
           flex-wrap: wrap;
       }
-      .host-picture img {
-         
-          position:initial;
-          
-      }
+      
       .tags {
           border-radius: 5px;
           font-weight: 500;
@@ -262,22 +247,9 @@
     font-size: 14px;
     font-weight: 500;
   }
-  .host-picture{
-    position: relative;
-    top:95px;
-    left:1px;
-  }
-  .host-name {
-    font-weight: 500;
-    font-size:12px;
-    position:relative;
-    top:110px;
-    left:15px;
-  }
-  .flex-logement {
+   .flex-logement {
     display: flex;
     flex-direction: column;
-    
   }
   .red-star {
     svg {
@@ -296,12 +268,7 @@
     .flex-tags {
         flex-wrap: wrap;
     }
-    .host-picture img {
-       
-        position:initial;
-        
-    }
-    .tags {
+     .tags {
         border-radius: 5px;
         font-weight: 500;
         size: 14px;
@@ -322,7 +289,16 @@
     }
      .dropdown-text p {
         font-size: 12px;
+    }  
+    .host-flex {
+      position: relative;
+      top:95px;
+      left:0px;
     }
-    
-     
+    .description-full{
+      width: 335px;
+   }
+   .equipements-full {
+    width: 335px;
+   }
 }

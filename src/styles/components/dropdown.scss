@@ -1,6 +1,7 @@
 li {
     list-style-type: none;
 }
+
 .dropdown-menu {
     background-color: #F6F6F6;
     overflow: hidden;
@@ -24,10 +25,11 @@ li {
 .dropdown-title {
     background-color: #FF6060;
     border-radius: 5px;
-    width: 100%;
+    min-width: 335px;
+    
     display:flex;
     justify-content: space-between;
-       h2 {
+    h2 {
         color:white;
         margin-left:1rem;
     }
@@ -42,41 +44,27 @@ li {
         
     }
 }
-@media screen and (max-width: 820px) {
-    .dropdown-menu {
+
+
+
+@media screen and (max-width: 1024px) {
+    .dropdown-title {
         width: 100%;
-        max-width: 800px;
-    }
-    .dropdown-title icon {
-        svg {
-            width: 20px;
-        }
-        
-     }
-     .dropdown-title img {
-         margin-top:0 ;
-     }
-     .dropdown-title {
         .icon {
             width: 20px;
         }
     }
+  
 }
+
 @media screen and (max-width: 500px) {
-    .dropdown-menu {
-        width: 100%;
-        max-width: 500px;
-    }
-    .dropdown-title icon {
-        svg {
-            width: 20px;
-        }
-        
-     }
+    
      .dropdown-title img {
          margin-top:0 ;
      }
      .dropdown-title {
+        width:100%;
+       
         .icon {
             width: 20px;
         }
