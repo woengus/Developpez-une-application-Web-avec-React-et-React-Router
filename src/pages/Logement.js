@@ -32,7 +32,7 @@ const Logement = () => {
 
   const [curentIndex, setCurentIndex] = useState(0);
 
-  //flèche de gauche
+  //flèche de droite
   const handleRotationRight = () => {
     const totalLength = logement.pictures.length;
     if (curentIndex + 1 === totalLength) {
@@ -45,7 +45,7 @@ const Logement = () => {
 
     setCurentIndex(newIndex);
   };
-  //flèche de droite
+  //flèche de gauche
   const handleRotationLeft = () => {
     const totalLength = logement.pictures.length;
     if (curentIndex === 0) {
