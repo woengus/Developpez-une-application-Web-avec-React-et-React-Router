@@ -25,11 +25,7 @@ const Logement = () => {
   const equipementHtml = equipements.map((data) => {
     return <li key={data}>{data}</li>;
   });
-  //map des tags
   const tags = logement ? logement.tags : [];
-
-  //handleClick
-
   const [curentIndex, setCurentIndex] = useState(0);
 
   //flèche de droite
