@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
 import Stars from "../components/Stars";
 import logements from "../logements.json";
+import Gallery from "../components/Gallery";
 
 const Logement = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const { id } = useParams(); //returns an object of key/value pairs of URL parameters.
+  const navigate = useNavigate(); //returns a function that lets you navigate programmatically.
 
   const logement = logements.find((element) => {
     return element.id === id;
   });
   useEffect(() => {
+    //this hook allows you to perform side effects in your components.
     const logementFounded = logements.find((element) => {
       return element.id === id;
     });
@@ -26,10 +28,10 @@ const Logement = () => {
     return <li key={data}>{data}</li>;
   });
   const tags = logement ? logement.tags : [];
-  const [curentIndex, setCurentIndex] = useState(0);
+  //const [curentIndex, setCurentIndex] = useState(0); //The React useState Hook allows us to track state in a function component.
 
   //flèche de droite
-  const handleRotationRight = () => {
+  /*const handleRotationRight = () => {
     const totalLength = logement.pictures.length;
     if (curentIndex + 1 === totalLength) {
       //on vérifie si l'index dépasse le total, si oui on retourne à 0, première image
@@ -50,44 +52,14 @@ const Logement = () => {
     }
     const newIndex = curentIndex - 1;
     setCurentIndex(newIndex);
-  };
+  };*/
   if (logement) {
     return (
       <div className="logement">
         <div className="background-logement">
           <div className="background-flex">
             <div className="background-img">
-              <div className="wrapper-images">
-                <span className="left-arrow" onClick={handleRotationRight}>
-                  <svg
-                    width="48"
-                    height="80"
-                    viewBox="0 0 48 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-                <img src={logement?.pictures[curentIndex]} alt="logement" />
-                <span className="right-arrow" onClick={handleRotationLeft}>
-                  <svg
-                    width="48"
-                    height="80"
-                    viewBox="0 0 48 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M47.04 7.78312L39.92 0.703125L0.359985 40.3031L39.96 79.9031L47.04 72.8231L14.52 40.3031L47.04 7.78312Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </div>
+              <Gallery pictures={logement?.pictures} />
             </div>
           </div>
 
